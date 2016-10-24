@@ -12,10 +12,11 @@
     position: relative;
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 177px;
-    height: 177px;
-    letter-spacing: -10px;
+    font-size: 89px;
+    height: 89px;
+    letter-spacing: -5px;
     color: black;
+    line-height: 89px;
 }
 .text-logo .layer {
     position: absolute;
@@ -26,27 +27,31 @@
 .text-logo .layer.l2 {
     color: transparent;
 }
-.text-logo .layer.l3 {
-}
 .text-logo .layer.l1:after,
 .text-logo .layer.l2:after {
-    content: "";
-    display: block;
-    background-color: black;
-    position: absolute;
-    width: 0.1em;
-    height: 0.1em;
-    top: 0.12em;
-    right: 0.11em;
-    border-radius: 1em;
+    content: "•";
+    color: black;
+    font-size: 45px;
+    line-height: 35px;
+    margin-left: -0.14em;
+    display: inline;
+    vertical-align: top;
+}
+.content {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.09);
 }
         </style>
     </head>
     <body style="background: white">
-        <div class="text-logo">
-            <p class="layer l1">mi</p>
-            <p class="layer l2">mni</p>
-            <p class="layer l3">mnmo</p>
+        <div class="content">
+            <div class="text-logo">
+                <p class="layer l1">m</p>
+                <p class="layer l2">mn</p>
+                <p class="layer l3">mnmo</p>
+            </div>
         </div>
     </body>
 </html>
