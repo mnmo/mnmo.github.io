@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>mnmo</title>
@@ -7,7 +7,12 @@
             name="viewport" 
             content="width=device-width, initial-scale=1"
         >
+        <link 
+            rel="stylesheet" 
+            href="https://unpkg.com/tachyons@4.5.3/css/tachyons.min.css"
+        >
         <style type="text/css">
+/*
 body {
     font-family: Helvetica, Arial, sans-serif;
     background: white;
@@ -19,20 +24,18 @@ body {
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.1);
     padding: 1em;
 }
+*/
 .text-logo {
-    position: relative;
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 89px;
+    line-height: 89px;
     height: 89px;
     letter-spacing: -5px;
-    color: black;
-    line-height: 89px;
+
+    position: relative;
 }
 .text-logo .layer {
     position: absolute;
     margin: 0;
-    top: 0;
 }
 .text-logo .layer.l1,
 .text-logo .layer.l2 {
@@ -40,27 +43,43 @@ body {
 }
 .text-logo .layer.l1:after,
 .text-logo .layer.l2:after {
-    content: "•";
     color: black;
     font-size: 45px;
     line-height: 35px;
     margin-left: -0.14em;
+
+    content: "•";
     display: inline;
     vertical-align: top;
 }
         </style>
     </head>
-    <body style="background: white">
-        <div class="content">
-            <div class="text-logo">
+    <body>
+        <div class="center mw8 pa4 cf shadow-5">
+            <div class="text-logo helvetica mb4">
                 <p class="layer l1">m</p>
                 <p class="layer l2">mn</p>
                 <p class="layer l3">mnmo</p>
             </div>
-            <div>
-                <h2>people</h2>
-                <a href="https://github.com/fczuardi/">fabricio</a> • <a href="http://mauriciozuardiwork.squarespace.com/">mauricio</a>
-            </div>
+            <section class="fl w-100 w-50-ns pa2 mb4">
+                <h2 class="black-50">about</h2>
+                <p class="measure">
+                    mnmo is a small organization with a focus
+                    on providing design and software services.
+                </p>
+            </section>
+            <section class="fl w-100 w-50-ns pa2 mb4">
+                <h2 class="black-50">people</h2>
+                <p>The team is made of seasoned professionals with lots of experience building quality products.</p>
+                <p>
+                    <a href="https://github.com/fczuardi/">Fabricio</a> •
+                    <a href="http://mauriciozuardiwork.squarespace.com/">Mauricio</a>
+                </p>
+            </section>
+            <section class="fl w-100 w-50-ns pa2 mb4">
+                <h2 class="black-50">contact</h2>
+                <p>coming soon…</p>
+            </section>
         </div>
     </body>
 </html>
